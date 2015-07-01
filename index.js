@@ -158,6 +158,7 @@ Swipe.prototype.unbind = function(){
  */
 
 Swipe.prototype.ontouchstart = function(e){
+  this.stop();
   this.transitionDuration(0);
   this.dx = 0;
   this.updown = null;
@@ -240,6 +241,8 @@ Swipe.prototype.ontouchend = function(e){
 
   // clear
   this.down = null;
+
+  this.play();
 
   // first -> next
   if (this.isFirst() && 1 == dir && half) return this.next();
