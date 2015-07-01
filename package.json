@@ -26,11 +26,6 @@
     "event": "component-event"
   },
   "license": "MIT",
-  "component": {
-    "scripts": {
-      "swipe/index.js": "index.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:shjie047/swipe-1.git"
